@@ -1,0 +1,2 @@
+Atenção: Não apague ou altere o nome das pastas, e nem mova de lugar, mantenha isso em sua home.
+Atenção: Modificar/Separar a pasta "_internal" do "ZAXZ PAINEL", vai causar uma lentidão muito grande no sistema.

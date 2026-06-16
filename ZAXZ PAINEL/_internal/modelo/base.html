@@ -1,0 +1,180 @@
+<!DOCTYPE html> <!-- Marco que o tipo é HTML, para o navegador não ter dúvidas, opcional, porém seguro. -->
+<html> <!-- Tudo deve estar dentro de <hmtl>. -->
+
+<head> <!-- Tudo na <head> são coisas essenciais para o funcionamento da página, como script, style e outros. -->
+    <title>ZAXZ</title> <!-- Título da aba, não está na página, é o nome da página. -->
+    <link rel="stylesheet" href="estilo/personalizar.css"> <!-- "Importo" meu CSS. -->
+</head>
+
+<!-- {# isso é um comentário do Jinja, ignorado completamente | Body é todo o corpo da página, tudo que aparecer na página, está no body, class="{{tema}}" é a linguagem de Flask, o {} serve para mostra que não é HTML, e o {{}} é um VALOR para Flask. #} -->
+<body class="{{ tema }}">
+
+    <h1 class="centralizado BOO">PAINEL ZAXZ <i class="fa-brands fa-linux"></i></h1> <!-- Coloco um texto grande e aplico a classe que centraliza e a que coloca a fonte. -->
+    <p class="centralizado">Bem-vindo a central absoluta do ZAXZ, aqui tudo estará autalizado e pronto<br>para você utilizar com máxima eficiência!</p> <!-- Parágrafo + centralizado. -->
+    
+    
+    <img class="centralizada-imagem" src="estilo/ZAXZ LOGO.png" alt="Logotipo oficial do ZAXZ"> <!-- Coloco uma imagem + centralizo + um texto de emergência caso ela não carregue. -->
+    
+    
+    <details class="centralizado-tabela"> <!-- <details> cria um bloco expansível ao clicar (a área) e centralizado a área da tabela. -->
+        <summary> <!-- Cria o título do "botão" que abre o bloco, junto disso uma setinha de fábrica já. -->
+            Sistemas ZAXZ
+            <i class="fa-solid fa-angle-right"></i> <!-- Eu troco a seta de fabrica por uma melhor, usando a Font Awesome, tem duas classes aí. -->
+        </summary>
+            <table class="personalizar-tabela"> <!-- A Table é a área visível de details. -->
+                <tr> <!-- Crio uma área horizontal de uma linha. -->
+                    <th style="width: 33%">MODELO</th> <!-- o <th>, diferente de <td>, vai deixar num estilo de "título", coloco nessa área horizontal, um texto, que ocupa 33% de espaço da table.  -->
+                    <th style="width: 34%">TIPO</th>
+                    <th style="width: 33%">LINK</th>
+                </tr>
+                <tr> <!-- Crio outra área horizontal de uma linha, em baixo da anterior. -->
+                    <td style="color: #000000">ZAXZ SY (ZAXZ)</td> <!-- Dessa vez <td>, agora, vai se comportar como um texto normal -->
+                    <td>Múltipla Tarefa</td>
+                    <td><a target="_blank" style="color: #000000" href="https://github.com/D3LT4-1NCK/ZAXZ-Sistema-Autonomo-com-Ferramentas-Hacker">https://github.com/D3LT4-1NCK/ZAXZ</a></td>
+                </tr>
+                <tr>
+                    <td style="color: #000000">ZAXZ X</td>
+                    <td>Anotações</td>
+                    <td><a target="_blank" style="color: #000000" href="https://github.com/D3LT4-1NCK/ZAXZ-X-Sistema-de-Fichas-Sobre-Pessoas">https://github.com/D3LT4-1NCK/ZAXZ-X</a></td>
+                </tr>
+                <tr>
+                    <td style="color: #000000">Oblivion (Subordinado do ZAXZ)</td>
+                    <td>Raid Bot de Discord</td>
+                    <td><a target="_blank" style="color: #000000" href="https://discord.gg/NMWvwDh6fR">https://discord.gg/NMWvwDh6fR</a></td> <!-- <a> serve para direcionar o usuário a algum lugar. -->
+                </tr>
+            </table>
+    </details>
+
+    <details class="centralizado-tabela-2">
+        <summary>
+            Sistemas Suportados
+            <i class="fa-solid fa-angle-right"></i>
+        </summary>
+            <table class="personalizar-tabela">
+                <tr> 
+                    <th style="width: 50%">Distro</th>
+                    <th style="width: 50%">Suportado</th>
+                </tr>
+                <tr>
+                    <td>Alma Linux <i class="fl-almalinux"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Arch Linux <i class="fl-archlinux"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>CentOS Stream <i class="fl-centos"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>Debian <i class="fl-debian"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Elementary OS <i class="fl-elementary"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>EndeavourOS <i class="fl-endeavouros"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>Fedora <i class="fl-fedora"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Gentoo <i class="fl-gentoo"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>Kali Linux <i class="fl-kali-linux"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Linux Mint <i class="fl-linuxmint"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Manjaro <i class="fl-manjaro"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>MX Linux <i class="fl-mxlinux"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>NixOS <i class="fl-nixos"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>OpenSUSE <i class="fl-opensuse"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>Parrot OS <i class="fl-parrot"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Pop_OS <i class="fl-pop-os"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>Red Hat Enterprise Linux <i class="fl-redhat"></i></td>
+                    <td style="color: red;">Não</td>
+                </tr>
+                <tr>
+                    <td>Rocky Linux <i class="fl-rocky-linux"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Slackware <i class="fl-slackware"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Ubuntu <i class="fl-ubuntu"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+                <tr>
+                    <td>Zorin OS <i class="fl-zorin"></i></td>
+                    <td style="color: #51d36d;">Sim</td>
+                </tr>
+            </table>
+    </details>
+
+    <form class="personalizar-botao" action="/fechar" method="post"> <!-- Crio um formulário, que é usado para enviar informações para fora, nele, aplico as personalizações que estão no CSS, e por último, uma ação + post que usam o script em flask que eu criei -->
+        <button class="centralizado BOO" type="submit">Sair</button> <!-- Apenas um botão que está dentro da form, logo, ele é só uma manisfestação do comando /fechar. -->
+    </form>
+
+
+    <!-- Crio o if/else de Flask -->
+    <a href="/tema"> <!-- href é o endereço -->
+        {% if tema == "dark" %} <!-- Se tema for "dark"... -->
+            <i class="fa-solid fa-moon superior-direito cor-sol"></i> <!-- Personalizo todo o símbolo que altera o tema... -->
+        {% else %} <!-- Se não... -->
+            <i class="fa-solid fa-sun superior-direito cor-lua"></i>
+        {% endif %}  <!-- Encerro o if... -->
+    </a>
+
+    <form class="personalizar-botao" action="/refresh" method="post"> <!-- Crio um formulário, que é usado para enviar informações para fora, nele, aplico as personalizações que estão no CSS, e por último, uma ação + post que usam o script em flask que eu criei -->
+        <button class="centralizado BOO" type="submit">Recarregar</button> <!-- Apenas um botão que está dentro da form, logo, ele é só uma manisfestação do comando /fechar. -->
+    </form>
+
+
+    <div class="superior-esquerdo" style="color: #000000; font-size: 12px; font-weight: bold;">
+        <p>Seu IPv4 público atual: {{ ipv4 }}<br>Seu IPv6 público atual: {{ ipv6 }}</p>
+    </div>
+
+    <div class="superior-esquerdo-abaixo" style="color: #000000; font-size: 12px; font-weight: bold;">
+        <p>Sua distro: {{ modelo_distro }}<br>Versão: {{ versao_distro }}<br>Status: {{ atualizacao }}</p>
+    </div>
+
+    {% if necessita_atualizar == True %}
+    <form action="/atualizar" method="post">
+        <button class="superior-esquerdo-mais-abaixo BOO" type="submit">Atualizar Distro</button>
+    </form>
+    {% endif %}
+
+</body>
+
+</html>

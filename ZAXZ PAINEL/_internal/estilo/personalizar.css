@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap); /* Importo uma fonte do Google chamada Black-Ops-One */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"); /* Importo a font-awesome, que tem vários símbulos fodas */
+@import url("https://cdn.jsdelivr.net/npm/font-logos@1/assets/font-logos.css"); /* Fontes fodas do Linux! O link ensinando: https://github.com/lukas-w/font-logos */
+
+.centralizado {
+    text-align: center; /* Centralizador de texto simples */
+} 
+
+.centralizada-imagem {
+    display: block; /* Torno a área da imagem uma barreira física para qualquer texto, impossível ter um texto atrás/por cima da imagem agora */
+    margin: 15px auto; /* Centralizo */
+    width: 275px; /* Largura da imagem */
+    height: auto; /* Altura da imagem, em AUTO, vai seguir o padrão da largura */
+    border-radius: 10px; /* arredonda um pouco */
+}
+
+.centralizado-tabela {
+    display: block; /* Isso faz a área da tabela (tanto fechada quanto aberta) ser uma barreira física, nada fica dentro */
+    width: 70%; /* A área da tabela lá no HTML só vai usar 70% da tela do usuário */
+    margin: 15px auto; /* Isso faz a área da tabela ocupar 15px a mais de espaço para todos os lados, mantendo-a com um espaço pessoal seguro */
+}
+
+.centralizado-tabela-2 {
+    display: block; /* Isso faz a área da tabela (tanto fechada quanto aberta) ser uma barreira física, nada fica dentro */
+    width: 45%; /* A área da tabela lá no HTML só vai usar 70% da tela do usuário */
+    margin: 15px auto; /* Isso faz a área da tabela ocupar 15px a mais de espaço para todos os lados, mantendo-a com um espaço pessoal seguro */
+}
+
+summary {
+    cursor: default; /* Agora o cursor se mantém igual não importa o que ele faça ao passar por cima de "summary" lá no HTML */
+    text-align: center; /* Centralizo o texto */
+    list-style: none; /* Tiro qualquer tipo de estilo da lista que seja padrão */
+}
+
+th, td {
+    text-align: center;
+    border-left: 1px solid #000000;  /* Crio uma linha sólida de um pixel a ESQUERDA de cada elemento na table, tipo um '|' */
+}
+
+td {
+    font-family: Verdana; /* Mudo a fonte de todos os 'td' */
+}
+
+.personalizar-tabela {
+    border-collapse: collapse; /* Junta as bordas duplicadas das células da tabela numa borda só.Junta as bordas duplicadas das células da tabela numa borda só. */
+    border: 1px solid #000000; /* Borda de um pixel, tipo sólida, preta */
+    width: 100%; /* A table lá no HTML agora usa 100% do espaço possível */
+    box-shadow: 10px 5px 5px #1f1f1f; /* Isso cria uma sombra na tabela, realista, 10px para a direita, 5px para baixo e 5px de desfoque, cinza escuro */
+}
+
+.BOO {
+    font-family: 'Black Ops One', sans-serif; /* Fonte esperada e Fonte de emergência */
+}
+
+button {
+    display: block; /* Isso faz a área do botão ser uma barreira física, nada fica dentro */
+    margin: 15px auto; /* Centralizo */
+    padding: 12px 30px; /* Espaço interno */
+    font-size: 20px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Faço o elemento não ser maior ao esperado */
+    background-color: #000000; /* Cor do botão */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Remove bordas padrões (fica um branco bem feio) */
+    border-radius: 5px; /* Cantos arredondados */
+    outline: none;  /* remove aquele contorno azul/preto que aparece ao clicar/focar */
+    box-shadow: 10px 5px 5px #1f1f1f;  /* Sombra do botão */
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Removo a seta padrão do HTML (a que abre a table) */
+}
+
+details summary i {
+    transition: transform 0.2s;
+}
+
+details[open] summary i {
+    transform: rotate(90deg); /* Esse e o de cima fazem a rotação da seta que colocamos */
+}
+
+body.dark {
+    background-color: #4c3b7a; /* Cor do tema escuro */
+}
+
+body.light {
+    background-color: #dcd0ff; /* Cor do tema claro */
+}
+
+.superior-direito { /* Encaixe de canto */
+    position: absolute; 
+    top: 15px;
+    right: 15px;
+}
+
+.superior-esquerdo { /* Encaixe de canto */
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.superior-esquerdo-abaixo { /* Encaixe de canto */
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.superior-esquerdo-mais-abaixo { /* Para botões de notificação ex: Atualização, mas tem que tomar cuidado para n um sobrepor o outro */
+    position: absolute;
+    top: 105px;
+    left: 15px;
+    padding: 5px 15px; /* Espaço interno */
+    font-size: 12px; /* Tamanho da fonte */
+    box-sizing: border-box; /* Faço o elemento não ser maior ao esperado */
+    box-shadow: 5px 3px 3px #1f1f1f;  /* Sombra do botão */
+}
+
+.cor-lua { /* Cor do ícone */
+    color: #4c3b7a;
+    font-size: 40px;
+}
+
+.cor-sol { /* Cor do ícone */
+    color: #dcd0ff;
+    font-size: 40px;
+}
